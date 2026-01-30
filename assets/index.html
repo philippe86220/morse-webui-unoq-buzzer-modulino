@@ -1,1 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Morse</title>
+  <style>
+  
+  body { 
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  background-color: #AEB8A0;
+  color : #333;
+  margin-left: 20px;
+ }
+    
+    .row { margin: 8px 0; }
+    .morseLine { display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #111; display: inline-block; }
+    .dash { width: 22px; height: 8px; border-radius: 4px; background: #111; display: inline-block; }
+    .gap { width: 14px; height: 8px; display: inline-block; }
+    .word { display: inline-block; width: 18px; height: 8px; border-left: 2px solid #999; margin: 0 10px; }
+    .small { color: #444; font-size: 13px; }
+    pre { background: #f2f2f2; padding: 10px; }
+    
+  #morseView {
+  color: rgb(0, 128, 255);
+  font-size: 2rem;
+}
+.speed input[type="range"] {
+  transform: scale(1.1);
+}
+
+.speed {
+  font-size: 1.4rem;
+  color: rgb(0, 128, 255);
+}
+#speedVal {
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+</style>
+</head>
+<body>
+  <h2>Morse</h2>
+  <label for="txt">Texte a jouer :</label><br><br>
+  <input id="txt" type="text" size="40" > 
+  <div class="row speed">
+  <label for="speed">Vitesse :</label>
+  <input id="speed" type="range" min="5" max="30" value="17">
+  <span id="speedVal">17</span>
+  </div>
+
+
+  <button id="send" type="button">Envoyer</button>
+  <button id="status" type="button" style="display: none;">Status</button>
+  <button id="clear" type="button">Effacer</button>
+
+
+  <h3>Representation</h3>
+  <div id="morseView"></div>
+  
+  <h3  style="display: none;">API</h3> 
+  <pre  style="display: none;" id="out"></pre>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>
+
 
