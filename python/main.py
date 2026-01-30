@@ -10,7 +10,7 @@ _queue = []               # liste de dict: {"txt": "...", "speed": int}
 _busy = False
 _last = {"state": "idle"}
 
-_speed = 17               # vitesse globale par defaut
+_speed = 17                # vitesse globale par defaut
 _lock = threading.Lock()  # protege _speed + _queue + _last (simple et safe)
 
 def clamp_speed(v):
@@ -88,4 +88,7 @@ def loop():
             with _lock:
                 _busy = False
 
+    time.sleep(0.05)
 
+print("WebUI ready: /morse?data=coucou&speed=12   /speed?value=9   /status")
+App.run(user_loop=loop)
