@@ -43,6 +43,12 @@ Ce projet est à la fois :
 
 ---
 
+## Aperçu
+
+![Morse WebUI screenshot](screenshots/ui.png)
+
+---
+
 ## Architecture générale
 
 ```
