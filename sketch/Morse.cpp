@@ -89,3 +89,53 @@ void Morse::tiret(int duree, int frequence)
   delay(d);
 }
 
+void Morse::caractere(int vitesse, int frequence, int index)
+{
+  const char* ptr = codeMorse[index].representation;
+
+  if (*ptr == '\0') {
+    delay(3 * vitesse);
+    return;
+  }
+
+  while (char symbole = *ptr++) {
+    if (symbole == '.') point(vitesse, frequence);
+    else               tiret(vitesse, frequence);
+
+    // Espace inter-element
+    delay(vitesse);
+  }
+
+  // Espace inter-lettre
+  delay(3 * vitesse);
+}
+
+void Morse::joue(void)
+{
+  while (*_s) {
+    char c = *_s;
+
+    if (isspace((unsigned char)c)) {
+      // Espace inter-mot (approx)
+      delay(8 * _vitesse);
+      _s++;
+      continue;
+    }
+
+    char l = (char)toupper((unsigned char)c);
+    int index = trouveIndex(l);
+
+    if (index < 0) {
+      delay(3 * _vitesse);
+      _s++;
+      continue;
+    }
+
+    caractere(_vitesse, NOTE_C4, index);
+    _s++;
+  }
+}
+
+Morse::~Morse()
+{
+}
