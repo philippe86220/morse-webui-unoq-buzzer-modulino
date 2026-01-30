@@ -1,4 +1,4 @@
-#include <Arduino.h>
+//#include <Arduino.h>
 #include <Arduino_RouterBridge.h>
 #include "Modulino.h"
 #include "Morse.h"
@@ -68,4 +68,3 @@ void loop()
 {
   delay(20);
 }
-
