@@ -269,7 +269,7 @@ Expected result:
 - the request is accepted immediately,
 - Morse playback starts on the buzzer,
 - the call returns a JSON confirmation :  
-  {"ok":true,"accepted":true,"txt":"SOS","len":3,"speed":15}.
+  `{"ok":true,"accepted":true,"txt":"SOS","len":3,"speed":15}`.
 - This validates the full path :
 ```
 WebUI → Python → Bridge → MCU → Buzzer
