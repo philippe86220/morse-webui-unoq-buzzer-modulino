@@ -209,32 +209,86 @@ This was validated by ear by a former Morse instructor.
 
 ---
 
-## 9. Step-by-Step Experiments
+## 9. Step-by-step Experiments (UNO Q)
 
-### Step 1 – MCU Test
-Upload the sketch.  
-Expected result:
-- two short beeps at startup.
+### Step 1 – System startup (Run)
 
-### Step 2 – Linux Test
-Run `main.py`.  
-Expected result:
-- `/ping` returns `{ "ok": true }`.
+Click `Run` in the Arduino App Lab environment.  
 
-### Step 3 – API Test
-Open:
+This single action automatically :  
+
+- flashes and restarts the MCU (STM32),
+- starts the Linux environment,
+- launches the Python application (`main.py`),
+- starts the WebUI server,
+- initializes the Bridge between Linux and the MCU.
+
+**Expected result :**
+  
+- the buzzer emits two short beeps at startup,
+- the Python monitor shows messages such as:
+  
 ```
-/morse?data=SOS&speed=15
+Activating python virtual environment
+======== App is starting ============================
+2026-01-31 16:25:38.506 INFO - [WebUI.execute] WebUI:  The application interface is available here:
+- Local URL:   http://localhost:7000
+- Network URL: http://192.168.1.50:7000
+2026-01-31 16:25:38.506 INFO - [MainThread] App:  App started
+```
+No manual action is required at this stage.  
+
+---
+
+
+### Step 2 – WebUI availability check
+
+Open a web browser on the same network and navigate to: 
+```
+http://<UNO_Q_IP>:7000/ping
+```
+**Expected result** :  
+```
+{ "ok": true }
+```
+This confirms that:
+- the Linux application is running,
+- the WebUI layer is active,
+- HTTP communication is operational.
+
+  ---
+
+### Step 3 – API Morse playback test
+
+In the browser, open :  
+
+```
+http://<UNO_Q_IP>:7000/morse?data=SOS&speed=15
 ```
 Expected result:
-- Morse playback on buzzer.
+- the request is accepted immediately,
+- Morse playback starts on the buzzer,
+- the call returns a JSON confirmation.
+- This validates the full path :
+```
+WebUI → Python → Bridge → MCU → Buzzer
+```
 
-### Step 4 – Web UI Test
-Open `index.html`.  
-Expected result:
-- visual dots/dashes,
-- adjustable speed,
-- sound playback.
+
+
+### Step 4 – Web interface usage
+
+Open the main Web UI:   
+```
+http://<UNO_Q_IP>:7000/
+```
+
+**Expected result** :
+- text input field for Morse messages,
+- adjustable speed slider,
+- real-time visual representation (dots and dashes),
+- synchronized Morse audio playback.  
+Multiple browser tabs or devices can interact with the WebUI alternately without blocking the system.
 
 ---
 
