@@ -233,7 +233,7 @@ Activating python virtual environment
 ======== App is starting ============================
 2026-01-31 16:25:38.506 INFO - [WebUI.execute] WebUI:  The application interface is available here:
 - Local URL:   http://localhost:7000
-- Network URL: http://192.168.1.50:7000
+- Network URL: <UNO_Q_IP>:7000
 2026-01-31 16:25:38.506 INFO - [MainThread] App:  App started
 ```
 No manual action is required at this stage.  
