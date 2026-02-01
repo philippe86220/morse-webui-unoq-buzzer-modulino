@@ -343,6 +343,16 @@ via the Bridge, supporting both command-driven and event-driven system architect
 
 ---
 
+### Acknowledgements
+
+This tutorial and its documentation were developed through a collaborative process combining
+hands-on experimentation on the Arduino UNO Q platform and iterative discussions assisted by
+ChatGPT, used as a support tool for structuring, clarifying, and documenting the architectural concepts.
+
+All design choices, experiments, and validations remain the responsibility of the author.
+
+---
+
 ## **Note on platform maturity**
 >
 > The Arduino UNO Q is a relatively new platform, and its architecture is still evolving.
