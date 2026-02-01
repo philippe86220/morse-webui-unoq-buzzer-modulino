@@ -326,9 +326,11 @@ The same architecture can be reused for:
 - LED control,
 - displays,
 - sensors,
-- radio interfaces,
 - robotics.
 
+Although this tutorial focuses on a command-driven flow (Web → Linux → MCU), the Arduino UNO Q architecture also supports the opposite direction, where execution starts from the MCU.
+A complementary project available on the same GitHub account demonstrates an event-driven architecture, in which a hardware sensor on the MCU triggers actions on the Linux side (network notifications via IFTTT).
+Together, these projects demonstrate that the Arduino UNO Q supports both command-driven and event-driven architectures, with bidirectional communication between Linux and the MCU via the Bridge.
 
 
 
