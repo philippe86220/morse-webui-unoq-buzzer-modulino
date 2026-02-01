@@ -11,7 +11,9 @@ It is intended for **university students**, educators, and developers who want t
 - how responsibilities are split between Linux and the MCU,
 - how real-time constraints are handled correctly.
 
-The project uses Morse code as a concrete and educational example, but the concepts apply to many other domains.
+The project uses Morse code as a concrete and educational example, while illustrating concepts
+that are applicable to many other domains.
+
 
 ---
 
