@@ -339,6 +339,13 @@ https://github.com/philippe86220/UNO-Q-modulino-distance-notification-push-sur-i
 Together, these projects illustrate the bidirectional communication capabilities of the Arduino UNO Q
 via the Bridge, supporting both command-driven and event-driven system architectures.
 
+---
+
+> **Important note**
+>
+> This tutorial presents an experimental and educational interpretation of the Arduino UNO Q
+> architecture. While all examples have been tested successfully, the platform is still
+> evolving and details may change over time.
 
 
 
