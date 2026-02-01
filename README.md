@@ -180,6 +180,14 @@ Personal project around Morse code, Arduino UNO Q, and Web interfaces.
 
 ---
 
+## Architecture interne (WebUI → STM32)
+
+A detailed description of the complete path of a request,
+From the browser to execution on the STM32:
+
+➡️ [WebUI to STM32 Morse execution flow](WEBUI_TO_STM32_MORSE_FLOW.md)
+
+
 ## Acknowledgements
 
 This project was designed and structured with the help of ChatGPT (OpenAI),
