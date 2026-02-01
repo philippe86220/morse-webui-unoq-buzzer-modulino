@@ -275,7 +275,7 @@ Expected result:
 WebUI → Python → Bridge → MCU → Buzzer
 ```
 
-
+---
 
 ### Step 4 – Web interface usage
 
@@ -292,6 +292,8 @@ http://<UNO_Q_IP>:7000/
 Multiple browser tabs or devices can interact with the WebUI alternately without blocking the system.
 
 ---
+
+**step 2 and step 3** experiments are not mandatory to use the project, but they have been fully implemented and validated during development to verify the complete WebUI → Linux → MCU execution path.
 
 ## 10. Common Issues
 
