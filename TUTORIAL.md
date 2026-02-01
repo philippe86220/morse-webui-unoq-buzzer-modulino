@@ -341,12 +341,15 @@ via the Bridge, supporting both command-driven and event-driven system architect
 
 ---
 
-> **Important note**
+> **Note on platform maturity**
 >
-> This tutorial presents an experimental and educational interpretation of the Arduino UNO Q
-> architecture. While all examples have been tested successfully, the platform is still
-> evolving and details may change over time.
-
+> The Arduino UNO Q is a relatively new platform, and its architecture is still evolving.
+> The interpretations and demonstrations presented in this tutorial reflect the author’s
+> current understanding based on practical experimentation and available public documentation.
+>
+> This work is intentionally kept at a general architectural level and is shared in a spirit
+> of open discussion. Any feedback, corrections, or clarifications from Arduino engineers or
+> the community are very welcome and will be gladly taken into account.
 
 
 
