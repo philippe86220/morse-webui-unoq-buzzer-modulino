@@ -1,8 +1,5 @@
 # UNO Q – WebUI → Python → Bridge → STM32 (Morse) – Step by step
 
-> This document explains the internal execution flow of the UNO Q WebUI
-> Morse application, from the browser to the STM32 via Python and Bridge.
-
 This document describes **the complete execution path** of a user request,
 from the WebUI browser interface to the execution of Morse code on the STM32
 using the Modulino Buzzer.
