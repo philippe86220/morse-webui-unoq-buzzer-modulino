@@ -341,7 +341,7 @@ via the Bridge, supporting both command-driven and event-driven system architect
 
 ---
 
-> **Note on platform maturity**
+## **Note on platform maturity**
 >
 > The Arduino UNO Q is a relatively new platform, and its architecture is still evolving.
 > The interpretations and demonstrations presented in this tutorial reflect the author’s
