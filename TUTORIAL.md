@@ -293,7 +293,9 @@ Multiple browser tabs or devices can interact with the WebUI alternately without
 
 ---
 
-**step 2 and step 3** experiments are not mandatory to use the project, but they have been fully implemented and validated during development to verify the complete WebUI → Linux → MCU execution path.
+**Steps 2 and 3** are optional and not required for normal use of the project. 
+They are provided as validation experiments and were fully implemented and tested during development to verify the complete WebUI → Linux → MCU execution path.
+
 
 ## 10. Common Issues
 
