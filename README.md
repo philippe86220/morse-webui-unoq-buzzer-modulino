@@ -72,6 +72,9 @@ This clear separation provides:
 
 ```
 ├- morse-webui-uno-q-buzzer-modulino/
+├── WEBUI_TO_STM32_MORSE_FLOW.md
+├── TUTORIAL.md
+├── README-fr.md
 ├── README.md
 ├── LICENSE
 ├── assets/
